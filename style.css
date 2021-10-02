@@ -1,0 +1,405 @@
+/* index */
+@font-face {
+font-family: 'GmarketSansLight';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+  margin:0;
+}
+
+h1 {
+  text-align:center;
+  padding-top:370px;
+  padding-bottom:370px;
+  margin-block-start:0;
+  margin-block-end:0;
+}
+
+h2 {
+  text-align:center;
+  padding-top:370px;
+  padding-bottom:370px;
+  margin-block-start:0;
+  margin-block-end:0;
+}
+
+a{
+  text-decoration:none;
+}
+
+#menu1{
+  font-family:'GmarketSansLight';
+  color:#AED9DA;
+  font-size:37px;
+  background-color: #351F39;
+}
+
+#menu1:hover{
+  font-size:0;
+}
+
+#menu1:hover:before{
+  content:'안녕하세요';
+  background-color: #351F39;
+  color:Beige;
+  font-size:35px;
+}
+
+#menu2{
+  font-family:'GmarketSansLight';
+  color:#351F39;
+  background-color: #AED9DA;
+  font-size:37px;
+}
+
+#menu2:hover{
+  font-size:0;
+}
+
+#menu2:hover:before{
+  content:'킴릴로입니다';
+  background-color: Beige;
+  color:#351F39;
+  font-size:35px;
+}
+
+.grid{
+  display: block;
+  height:100vh;
+}
+
+.left{
+  background-color:#AED9DA;
+}
+
+.left:hover{
+  width:80vw;
+}
+
+.right{
+  background-color:#351F39;
+}
+
+.right:hover{
+  width:80vw;
+}
+
+@media(min-width:450px){
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* pages*/
+
+ .frame{
+   padding-left: 30px;
+   padding-right: 30px;
+ }
+
+ nav{
+   font-family:'GmarketSansLight';
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-size: 21px;
+   text-align: center;
+   padding-left: 50px;
+   padding-right: 30px;
+   padding-top: 50px;
+   padding-bottom: 30px;
+ }
+ nav ul{
+   display: inline;
+   align-self: center;
+ }
+
+ ul{
+   padding-left: 70px;
+   padding-right: 30px;
+ }
+
+ li{
+   display: inline;
+   align-self: center;
+   padding-left: 25px;
+ }
+
+ a{
+   text-decoration: none;
+   color: #AED9DA;
+ }
+
+ a:hover{
+   color:#6CBF84;
+ }
+
+ body{
+   background-color: #010017;
+   margin: 0;
+ }
+
+ .home{
+   position: relative;
+   z-index: 1;
+   color:#351F39;
+   transition:0.5s;
+ }
+
+ .home:hover{
+   color:Beige;
+ }
+
+ .circle{
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   left:67.5px;
+   top:53px;
+   background-color: #AED9DA;
+   opacity: .6;
+ }
+
+/* left */
+
+.lilo_1{
+  text-decoration: none;
+  color: #AED9DA;
+}
+
+.lilo_1:hover{
+  color:#6CBF84;
+}
+
+.loves_1{
+  color:#6CBF84;
+}
+
+.likes-section{
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  transition: all .5s ease;
+  opacity: 0;
+  background-color: AliceBlue;
+}
+
+.container:hover .overlay{
+  opacity: .7;
+}
+
+.overlaytext{
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  font-family:'GmarketSansLight';
+}
+
+.overlayLeft{
+  height: 100%;
+  width:0;
+  top:0;
+  left:0;
+  background-color: AliceBlue;
+}
+
+.container:hover .overlayLeft{
+  width: 100%;
+}
+
+.overlayRight{
+  height: 100%;
+  width:0;
+  top:0;
+  right:0;
+  background-color: AliceBlue;
+}
+
+.container:hover .overlayRight{
+  width: 100%;
+}
+
+.overlayBottom{
+  height: 0;
+  width:100%;
+  bottom:0;
+  left:0;
+  background-color: AliceBlue;
+}
+
+.container:hover .overlayBottom{
+  height: 100%;
+}
+
+.overlayTop{
+  height:0;
+  width:100%;
+  top:0;
+  left:0;
+  background-color: AliceBlue;
+}
+
+.container:hover .overlayTop{
+  height: 100%;
+}
+
+.footer{
+  height: 50px;
+}
+
+#footer_1{
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family:'GmarketSansLight';
+  font-size: 30px;
+  color:Beige;
+  transition: all .9s ease;
+}
+
+#footer_1:hover{
+  transform: translate(70%);
+}
+
+span{
+  background-color:AliceBlue;
+  color:#351F39;
+}
+
+/* right */
+
+ .lilo_2{
+   color:#6CBF84;
+ }
+
+ .loves_2{
+   text-decoration: none;
+   color: #AED9DA;
+ }
+
+ .loves_2:hover{
+   color:#6CBF84;
+ }
+
+ .profile{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+ }
+
+ #picture{
+   width: 410px;
+   margin-right: 70px;
+ }
+
+ .story{
+   color:Beige;
+ }
+
+ h5{
+  margin-top:10px;
+  margin-bottom:10px;
+ }
+
+ #intro{
+   font-family: 'GmarketSansLight';
+   font-size: 23px;
+   color:#FFD151;
+ }
+
+ p{
+   margin-top: 30px;
+   font-family: 'GmarketSansLight';
+   font-size: 19px;
+   line-height: 40px;
+   color:whitesmoke;
+ }
+
+ #name1{
+ background-color: #6CBF84;
+ color:Beige;
+ font-size: 23px;
+ font-weight: bolder;
+}
+
+ #name2{
+ color:green;
+ font-weight: bolder;
+ font-size: 23px;
+}
+
+ #name3{
+ color:Beige;
+ font-weight: bolder;
+ font-size: 23px;
+}
+
+ #name4{
+ color:darkgrey;
+ font-weight: bolder;
+ font-size: 19px;
+ }
+
+ #contact{
+   font-family:'GmarketSansLight';
+   background-color:#AED9DA;
+   color:#351F39;
+   font-weight: bolder;
+   font-size:25px;
+ }
+
+ #logo1{
+   width:43px;
+ }
+
+ #logo2{
+   width:41px;
+   padding-left: 9px;
+ }
+
+ #footer_2{
+   padding-left: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-family:'GmarketSansLight';
+   font-size: 27px;
+   color:beige;
+   transition: all .9s ease;
+ }
+
+ #footer_2:hover{
+   transform: translate(70%);
+ }
+
+ @media(max-width:650px){
+   .profile{
+     display:block;
+   }
+ }
