@@ -94,7 +94,7 @@ a{
   }
 }
 
-/* pages*/
+/* pages */
 
  .frame{
    padding-left: 30px;
@@ -182,16 +182,15 @@ a{
 
 .likes-section{
   width: 100vw;
-  height: auto;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container{
   position: relative;
   width: 30%;
-  height: 100%;
-  display: inline-block;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container img{
